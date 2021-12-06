@@ -1,0 +1,533 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   html {
+     box-sizing: border-box;
+   }
+   *, *:before, *:after {
+     box-sizing: inherit;
+   }
+   body {
+     background-color: #D5ECE2;
+     font-family: 'Open Sans', sans-serif;
+   }
+   p {
+     padding: 0 20px;     
+   }
+   h1 {
+     text-align: center;
+     padding: 10px;
+     margin: 0;
+     font-family: 'Open Sans Condensed', sans-serif;
+     color: white;
+     
+     /*justify-content: space-around;*/
+   }
+   h2, h3 {
+     padding: 0px 20px;     
+   }
+   .contenedor-barra {
+    /*display: inline; */
+     background-color: #4BA0B2 ;     
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+   }
+   .contenedor-barra h1 {
+    color: white;
+    margin:0;
+    /* font-size: 1.4rem; */
+    }
+    .contenedor-barra h4 {
+      color:white;
+      font-size: 1.2rem;
+    }
+    /* .contenedor-barra a {
+        color: white;
+        text-decoration: none;
+    } */
+    .izq {
+      display: flex;
+      justify-content: flex-end;
+    }
+   a {
+     text-decoration: none;
+     font-size: 1.2rem;
+     color: white;
+       
+     /*justify-content: flex-end;*/
+   }
+   .bg-info{
+     background-color: #ffffff;
+   }
+   .contenedor {
+     max-width: 800px;
+     margin: 0 auto;
+   }
+   .contenido {
+     margin-top: 20px;
+     padding: 10px;
+   }
+   .campos {     
+     margin: 10px 60px;
+     display: flex;
+     justify-content: space-between;
+   }
+   /* ver aún
+   .campo input[type="submit"] {
+     border:none;
+     background-color: #2C5963;
+     color: white;
+     text-transform: uppercase;
+     padding: 0 1.5rem;
+     font-size: 1rem;
+     transition:background-color .5s ease-in-out;
+   }
+   .campo input[type="submit"]:hover {
+    cursor:pointer;
+    background-color:#4093A5;
+   }
+   */
+   .campo a {
+     color: white;
+     text-align: center;
+     background-color:#2C5963;
+     padding: 15px 20px 0 20px; 
+     text-transform: uppercase;  
+     font-size: 17px;  
+     transition:background-color .5s ease-in-out;
+   }
+   
+   .campo a:hover{
+    cursor:pointer;
+    background-color:#4093A5;
+   }
+   .enviar {
+    display: flex;
+    justify-content: flex-end;
+    }
+    .campos2 {     
+      margin: 10px 60px;
+      display: flex;
+      justify-content: center;
+    }
+    .siguiente a{
+      padding: 10px 20px;
+    }
+    /* Estilos para formulario */
+    form {
+      padding: 3rem;
+      margin-top:2rem;
+    }
+    form legend {
+      text-align: center;
+      font-size: 1.7rem;    
+    }
+    legend span {
+      font-size:1rem;
+      margin-top:.5rem;
+      margin-bottom: 1rem;
+      clear:both;
+      display:block;
+    }
+    .campos_form {
+      display:flex;
+      justify-content:space-between;
+    }
+    .campo_form {
+      padding: .5rem 0;
+      flex: 0 0 calc(33.3% - 1rem);
+    }
+    .campo_form label {
+      font-size: 1.2rem;
+    }
+    .campo_form input[type="text"] {
+      width: 100%;
+      /* border: none; */
+      padding: .5rem;
+      height: 2.5rem;
+      margin-top: .5rem;
+      font-size:1.2rem;
+    }
+    .enviar_for {
+      display:flex;
+      justify-content:space-around;
+    }
+    .campo_form input[type="submit"] {
+      background-color:#2C5963;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      font-size: 1.2rem;
+      padding: 10px 15px;
+      transition:background-color .5s ease-in-out;
+    }
+    .campo_form input[type="submit"]:hover {
+      cursor:pointer;
+      background-color:#4093A5;
+      /* color:black; */
+    }
+    /* Estilos login */
+    .contenedor-formulario {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 90vh;
+    }
+    .contenedor-formulario h1 {
+        text-align: center;
+        color: white;
+    }
+    .contenedor-formulario h1  span{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .login {
+      background-color: #4BA0B2 ;  
+    }
+    .caja-login {
+      background-color: #F2F2F2;
+      border: 1px solid #707070;
+      max-width: 650px;
+      width: 90%;
+      margin: 0 auto;
+      min-height: 200px;
+      -webkit-box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+      -moz-box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+      box-shadow: 0px 25px 35px -17px rgba(0,0,0,0.56);
+      padding: 3rem;
+     }
+    .campoL {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    .campoL label {
+      flex: 0 0 100px;
+      text-align: right;
+      padding-right: 1rem;
+    }
+    .campoL input[type="text"],
+    .campoL input[type="password"] {
+      height: 3rem;
+      border: 0;
+      flex: 1;
+      border: 1px solid #455A64;
+      /* border-radius: 5rem; */
+      padding-left: 2rem;
+    }
+    .enviarL {
+      justify-content: flex-end;
+    }
+    .boton {
+      background-color:#2C5963;
+      text-align: center;
+      transition: background-color .5s ease-in-out;
+      display: block;
+      padding: 1rem;
+      text-transform: uppercase;
+      font-weight: 400;
+      border: none;
+      font-weight: 900;
+      color: white;
+    }
+    .boton:hover {
+      cursor: pointer;
+      background-color:#4093A5;
+      
+    }
+    .login_titulo {
+      color:black;
+    }
+    /* Estilos para la tabla */ 
+    .contenedor-documentos {
+      max-width: 950px;
+      margin: 4rem auto 0 auto;
+    }
+    table {
+      width: 100%;
+      margin: top 1em;
+      border-collapse: collapse;
+      background-color:#86C1CD;
+      
+    }
+    .listado-documentos {
+      background-color: #2C5963;
+      color: white;
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+    .listado-documentos thead th {
+      padding: 1rem 0;
+    }
+    .contenedor-tabla {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    table a {
+      color:black;
+    }
+   
+    
+  
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
